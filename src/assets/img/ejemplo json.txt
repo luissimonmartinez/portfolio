@@ -1,0 +1,62 @@
+curl --location 'https://domain.com/api/provider/articles/full-catalog' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer fooTokenBar==' \
+--data '[
+    {
+        "sku": "00001",
+        "manufacturer_sku": "DFG990-01",
+        "manufacturer": "BRAND",
+        "ean": 9999999999999,
+        "upc": 888888888888,
+        "asin": "B0006GQ8RW",
+        "title": "The product title",
+        "description": null,
+        "currency": "MXN",
+        "price": 3999,
+        "warehouses": {
+            "1": {
+                "stock": 9
+            },
+            "2": {
+                "stock": 2
+            }
+        }
+    },
+    {
+        "sku": "00002",
+        "manufacturer_sku": "DFG990-02",
+        "manufacturer": "BRAND",
+        "ean": null,
+        "title": "The product title 2",
+        "description": "The product description 2",
+        "currency": "MXN",
+        "price": 1299,
+        "warehouses": {
+            "1": {
+                "stock": 10
+            },
+            "2": {
+                "stock": 3
+            }
+        }
+    },
+    {
+        "sku": "00003",
+        "manufacturer_sku": "DFG990-03",
+        "manufacturer": "BRAND",
+        "ean": 9999999999999,
+        "title": "The product title 3",
+        "description": "The product description 3",
+        "currency": "MXN",
+        "price": 788,
+        "warehouses": {
+            "1": {
+                "stock": 11
+            },
+            "2": {
+                "stock": 4
+            }
+        }
+    }
+]'

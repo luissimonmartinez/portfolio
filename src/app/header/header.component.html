@@ -1,0 +1,21 @@
+<div class="header-top-fixed one-page-nav" [ngClass]="{'menu-open menu-open-desk' : sidebarOpen}">
+    <div class="container">
+        <ul class="main-menu">
+            <li>
+                <a class="menu-item" [ngClass]="{'active': currentSection === 'home'}" (click)="fullPageScroll('home')">Inicio</a>
+            </li>
+            <li>
+                <a class="menu-item" [ngClass]="{'active': currentSection === 'about'}" (click)="fullPageScroll('about')">Experiencia</a>
+            </li>
+            <li>
+                <a class="menu-item" [ngClass]="{'active': currentSection === 'project'}" (click)="fullPageScroll('project')">Portafolio</a>
+            </li>
+            <li>
+                <a class="menu-item" [ngClass]="{'active': currentSection === 'services'}" (click)="fullPageScroll('services')">Estudios</a>
+            </li>
+            <li>
+                <a class="menu-item" [ngClass]="{'active': currentSection === 'contactus'}" (click)="fullPageScroll('contactus')">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</div>

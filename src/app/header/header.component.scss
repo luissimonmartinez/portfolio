@@ -1,0 +1,25 @@
+li {
+  cursor: pointer;
+}
+
+.header-top-fixed .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu li {
+  margin: 0 15px;
+}
+
+.header-top-fixed {
+  height: 80px;
+}

@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-  word= '</>'
   experiences = [
     {
       rol: 'Senior Developer',
@@ -41,7 +40,7 @@ export class ExperienceComponent {
       init: 'Set. 2020',
       final: 'Oct. 2021',
       type: 'tiempo completo',
-      company: 'LEAD WORKING PARTNER S.A.C',
+      company: 'LWP S.A.C',
       description: ''
     },
     {
@@ -50,7 +49,7 @@ export class ExperienceComponent {
       init: 'Ene. 2020',
       final: 'Ago. 2020',
       type: 'tiempo completo',
-      company: 'PORTAL WEB TINGO MARIA',
+      company: 'PORTAL WEB TM',
       description: ''
     }
   ]

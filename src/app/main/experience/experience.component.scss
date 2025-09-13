@@ -1,3 +1,9 @@
 h2, h6{
   text-align: center;
 }
+.highlight-job {
+  border: 2px solid var(--px-theme);; /* azul bootstrap */
+  // background-color: #f0f8ff;
+  border-radius: .5rem;
+  padding: .5rem;
+}

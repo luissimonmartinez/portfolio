@@ -1,3 +1,17 @@
 h2 {
     text-align: center;
 }
+
+.px-modal {
+    .modal-content {
+        border: none;
+    }
+
+    .modal-body {
+        padding: 0px;
+    }
+}
+
+a {
+    border: none !important;
+}

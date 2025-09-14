@@ -8,5 +8,15 @@ import { options } from '../constant';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent {
+
   public customOptions: OwlOptions = options;
+
+  works = [
+    { client: 'Etnica Eco-Friendly', typeWork: 'Landing Page Administrable', image: 'assets/img/etnica-project.png' },
+    { client: 'Pendiente de subir', typeWork: 'Descripción pendiente', image: 'assets/img/popup-project-2.jpg' },
+    { client: 'Pendiente de subir', typeWork: 'Descripción pendiente', image: 'assets/img/popup-project-2.jpg' },
+    { client: 'Pendiente de subir', typeWork: 'Descripción pendiente', image: 'assets/img/popup-project-2.jpg' },
+    { client: 'Pendiente de subir', typeWork: 'Descripción pendiente', image: 'assets/img/popup-project-2.jpg' },
+  ]
+
 }

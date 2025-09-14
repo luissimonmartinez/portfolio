@@ -1,57 +1,60 @@
 export const options = {
-    loop: false,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    dots: true,
-    navSpeed: 700,
-    navText: ['', ''],
-    margin: 24,
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 2
-      },
-      940: {
-        items: 3
-      }
+  loop: false,
+  mouseDrag: true,
+  touchDrag: true,
+  pullDrag: true,
+  dots: true,
+  navSpeed: 700,
+  navText: ['', ''],
+  margin: 24,
+  responsive: {
+    0: {
+      items: 1
     },
-    nav: false
-  };
+    400: {
+      items: 1
+    },
+    740: {
+      items: 2
+    },
+    940: {
+      items: 2
+    }
+  },
+  nav: false
+};
 
 
 export const options2 = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    margin: 24,
-    responsive: {
-      0: {
-        items: 2
-      },
-      400: {
-        items: 3
-      },
-      740: {
-        items: 4
-      },
-      940: {
-        items: 5
-      }
+  loop: true,
+  mouseDrag: true,
+  touchDrag: true,
+  pullDrag: true,
+  dots: false,
+  navSpeed: 700,
+  navText: ['', ''],
+  margin: 24,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 2
     },
-    nav: false
-  };
+    400: {
+      items: 3
+    },
+    740: {
+      items: 4
+    },
+    940: {
+      items: 5
+    }
+  },
+  nav: false
+};
 
-export const customOptionsSingle= {
+export const customOptionsSingle = {
   loop: true,
   mouseDrag: true,
   touchDrag: true,
@@ -78,10 +81,10 @@ export const customOptionsSingle= {
 };
 
 export const typeoptions = {
-    strings: ['desarrollador','analista' ],
-    typeSpeed: 100,
-    backSpeed: 100,
-    showCursor: true,
-    cursorChar: '|',
-    loop: true
+  strings: ['desarrollador', 'analista'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  showCursor: true,
+  cursorChar: '|',
+  loop: true
 };

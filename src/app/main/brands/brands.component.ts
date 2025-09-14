@@ -10,6 +10,7 @@ import { options2 } from '../constant';
 export class BrandsComponent {
   public slidesStore!: any[];
   public customOptions2: OwlOptions = options2;
+
   ngOnInit(): void {
     this.slidesStore = [
       {

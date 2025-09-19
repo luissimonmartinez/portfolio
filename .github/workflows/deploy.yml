@@ -53,4 +53,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_TOKEN }}
           app_location: "/dist/my-first-project"
-          app_artifact_location: "dist/my-first-project"
+          deployment_action: "upload"

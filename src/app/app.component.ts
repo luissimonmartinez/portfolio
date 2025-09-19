@@ -1,18 +1,20 @@
-import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
 
-import { throttleTime} from 'rxjs/operators';
+import { throttleTime } from 'rxjs/operators';
 import { ScrollSpyService } from 'ng-spy';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit{
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
+
   public fixedHeader: boolean = false;
   private windowScroll$: Subscription = Subscription.EMPTY;
-  constructor(private spyService: ScrollSpyService){}
-  
+
+  constructor(private readonly spyService: ScrollSpyService) { }
+
   ngOnInit() {
     this.windowScroll$ = fromEvent(window, 'scroll')
       .pipe(throttleTime(30))
@@ -26,8 +28,8 @@ export class AppComponent implements OnInit, AfterViewInit{
   ngOnDestroy() {
     this.windowScroll$.unsubscribe();
   }
-  
-  onScroll(){
+
+  onScroll() {
     //code to fix header on scroll
     if (document.documentElement.scrollTop >= 100 || document.body.scrollTop >= 100) {
       this.fixedHeader = true;

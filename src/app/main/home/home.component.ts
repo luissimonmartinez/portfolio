@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
 import { typeoptions } from '../constant';
+import { FileUtil } from 'src/app/utils/file.util';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,13 +16,6 @@ export class HomeComponent implements OnInit {
   }
 
   downloadCV(): void {
-    // La ruta al archivo CV. Asegúrate de que el archivo exista en esta ruta dentro de la carpeta 'assets'.
-    const cvUrl = 'assets/files/CV-LSM.pdf';
-    const link = document.createElement('a');
-    link.href = cvUrl;
-    link.download = 'CV_Luis_Simon_Martinez.pdf'; // El nombre que tendrá el archivo al ser descargado.
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    FileUtil.download('CV_Luis_Simon_Martinez.pdf', 'assets/files/CV-LSM.pdf');
   }
 }

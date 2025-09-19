@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { options2 } from '../constant';
 
@@ -7,7 +7,7 @@ import { options2 } from '../constant';
   templateUrl: './brands.component.html',
   styleUrls: ['./brands.component.scss']
 })
-export class BrandsComponent {
+export class BrandsComponent implements OnInit {
   public slidesStore!: any[];
   public customOptions2: OwlOptions = options2;
 

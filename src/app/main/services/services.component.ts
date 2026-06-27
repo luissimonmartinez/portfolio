@@ -10,6 +10,18 @@ export class ServicesComponent {
 
   certifications = [
     {
+      title: 'Microsoft AI 900', date: 'Jun. 2026',
+      description: 'Certificación Microsoft AI 900 por la institución certificadora Microsoft',
+      pathFile: 'assets/files/certifications/ai900.pdf',
+      nameFile: 'ai900.pdf'
+    },
+    {
+      title: 'Microsoft GH 300 - Copilot', date: 'Ene. 2026',
+      description: 'Certificación Microsoft GH 300 - Copilot por la institución certificadora Microsoft',
+      pathFile: 'assets/files/certifications/gh300.pdf',
+      nameFile: 'gh300.pdf'
+    },
+    {
       title: 'GitHub Actions', date: 'Feb. 2025',
       description: 'Bootcamp de GitHub Actions cursada en la Plataforma Código Facilito',
       pathFile: 'assets/files/certifications/github_actions.pdf',
